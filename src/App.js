@@ -10,6 +10,7 @@ import {
 	ContainerMain,
 	ContainerVertical,
 	TextVertical,
+	ContainerPaletOuter,
 	ContainerPalet,
 	PaletBoot,
 } from "./styled.js";
@@ -56,6 +57,7 @@ function App() {
 					<h3>Jordan</h3>
 					<h3>Puma</h3>
 					<h3>Gucci</h3>
+					<AiOutlineHeart size={10} />
 				</ContainerMain>
 			</Main>
 			<ContainerVertical>
@@ -64,14 +66,16 @@ function App() {
 					<h3>Featured</h3>
 					<h3>Upcoming</h3>
 				</TextVertical>
-				<ContainerPalet
+				<ContainerPaletOuter
 					onTouchStart={handleTouchStart}
 					onTouchMove={handleTouchMove}
 					onTouchEnd={handleTouchEnd}>
-					<PaletBoot></PaletBoot>
-					<PaletBoot></PaletBoot>
-					<PaletBoot></PaletBoot>
-				</ContainerPalet>
+					<ContainerPalet>
+						<PaletBoot></PaletBoot>
+						<PaletBoot></PaletBoot>
+						<PaletBoot></PaletBoot>
+					</ContainerPalet>
+				</ContainerPaletOuter>
 			</ContainerVertical>
 		</div>
 	);
