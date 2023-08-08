@@ -32,7 +32,7 @@ export const ContainerMain = styled.div`
 	display: flex;
 	align-items: center;
 	white-space: nowrap;
-	overflow-x: hidden;
+	overflow-x: scroll;
 	margin: 25px 20px;
 	gap: 20px;
 	h3 {
