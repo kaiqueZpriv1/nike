@@ -68,39 +68,9 @@ function App() {
 					onTouchStart={handleTouchStart}
 					onTouchMove={handleTouchMove}
 					onTouchEnd={handleTouchEnd}>
-					<PaletBoot>
-						<div className='boot-header'>
-							<h3>Nike</h3>
-							<AiOutlineHeart size={15} />
-						</div>
-						<div className='main-boot'>
-							<h3>AIR-MAX</h3>
-							<span>$130.00</span>
-						</div>
-						<div className='image-boot'></div>
-					</PaletBoot>
-					<PaletBoot>
-						<div className='boot-header'>
-							<h3>Nike</h3>
-							<AiOutlineHeart size={15} />
-						</div>
-						<div className='main-boot'>
-							<h3>AIR-MAX</h3>
-							<span>$130.00</span>
-						</div>
-						<div className='image-boot'></div>
-					</PaletBoot>
-					<PaletBoot>
-						<div className='boot-header'>
-							<h3>Nike</h3>
-							<AiOutlineHeart size={15} />
-						</div>
-						<div className='main-boot'>
-							<h3>AIR-MAX</h3>
-							<span>$130.00</span>
-						</div>
-						<div className='image-boot'></div>
-					</PaletBoot>
+					<PaletBoot></PaletBoot>
+					<PaletBoot></PaletBoot>
+					<PaletBoot></PaletBoot>
 				</ContainerPalet>
 			</ContainerVertical>
 		</div>
