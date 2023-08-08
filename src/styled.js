@@ -32,7 +32,7 @@ export const ContainerMain = styled.div`
 	display: flex;
 	align-items: center;
 	white-space: nowrap;
-	overflow-x: auto;
+	overflow-x: hidden;
 	margin: 25px 20px;
 	gap: 20px;
 	h3 {
@@ -75,20 +75,21 @@ export const TextVertical = styled.div`
 		cursor: pointer;
 	}
 `;
+export const ContainerPaletOuter = styled.div`
+	display: flex;
+	align-items: center;
+	overflow-x: auto;
+`;
+
 export const ContainerPalet = styled.div`
 	display: flex;
 	align-items: center;
-	white-space: nowrap;
-	overflow-x: visible;
-	gap: 40px;
-	margin: 0 0 0 10px;
+	gap: 20px;
 `;
+
 export const PaletBoot = styled.div`
 	background: #909090;
 	width: 240px;
 	height: 335px;
-	/* overflow-x: auto; */
 	border-radius: 30px;
-	display: flex;
-	flex-direction: column;
 `;
