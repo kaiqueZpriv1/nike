@@ -1,6 +1,7 @@
 /** @format */
 import React, { useState } from "react";
-import { AiOutlineSearch, AiFillBell, AiOutlineHeart } from "react-icons/ai";
+import { AiOutlineSearch, AiFillBell } from "react-icons/ai";
+import TenisPallet from "./assets/components/TenisComponent.js";
 import {
 	Header,
 	HeaderView,
@@ -11,8 +12,6 @@ import {
 	ContainerVertical,
 	TextVertical,
 	ContainerPaletOuter,
-	ContainerPalet,
-	PaletBoot,
 } from "./styled.js";
 import "./assets/style/reset.css";
 import "./assets/style/style.css";
@@ -57,7 +56,7 @@ function App() {
 					<h3>Jordan</h3>
 					<h3>Puma</h3>
 					<h3>Gucci</h3>
-					<AiOutlineHeart size={10} />
+					<h3>Mizuno</h3>
 				</ContainerMain>
 			</Main>
 			<ContainerVertical>
@@ -70,11 +69,7 @@ function App() {
 					onTouchStart={handleTouchStart}
 					onTouchMove={handleTouchMove}
 					onTouchEnd={handleTouchEnd}>
-					<ContainerPalet>
-						<PaletBoot></PaletBoot>
-						<PaletBoot></PaletBoot>
-						<PaletBoot></PaletBoot>
-					</ContainerPalet>
+					<TenisPallet />
 				</ContainerPaletOuter>
 			</ContainerVertical>
 		</div>

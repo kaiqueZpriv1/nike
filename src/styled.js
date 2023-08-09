@@ -60,7 +60,7 @@ export const TextVertical = styled.div`
 	align-items: flex-start;
 	gap: 20px;
 	transform: rotate(-180deg);
-	margin: 0 25px;
+	margin: 0 20px 0 25px;
 	h3 {
 		writing-mode: vertical-lr;
 		word-spacing: 5px;
@@ -84,12 +84,59 @@ export const ContainerPaletOuter = styled.div`
 export const ContainerPalet = styled.div`
 	display: flex;
 	align-items: center;
-	gap: 20px;
+	gap: 45px;
 `;
 
 export const PaletBoot = styled.div`
-	background: #909090;
-	width: 240px;
-	height: 335px;
+	width: 250px;
+	height: 350px;
 	border-radius: 30px;
+`;
+
+export const HeaderBoot = styled.div`
+	display: flex;
+	justify-content: space-between;
+	margin: 10px 10px 0 10px;
+	color: #fff;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	h3 {
+		font-size: 5%.5;
+		font-weight: 400;
+	}
+`;
+
+export const SubHeader = styled.div`
+	display: flex;
+	flex-direction: column;
+	color: #fff;
+	margin: 5px 10px 0 10px;
+	h3 {
+		font-size: 7vw;
+		font-weight: 500;
+		font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+		letter-spacing: 2px;
+	}
+	span {
+		margin-top: 5px;
+		font-size: 4.5vw;
+		font-weight: 300;
+		font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+			"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	}
+`;
+export const ImageTenis = styled.div`
+	position: relative;
+	right: 15px;
+	img {
+		transform: rotate(-35deg);
+		z-index: 9;
+		width: 300px;
+	}
+`;
+export const FooterBoot = styled.div`
+	margin: 5px;
+	position: relative;
+	top: 50px;
+	left: 205px;
 `;
