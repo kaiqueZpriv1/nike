@@ -1,4 +1,5 @@
 /** @format */
+
 import React, { useState } from "react";
 import {
 	AiOutlineSearch,
@@ -28,7 +29,9 @@ import {
 } from "./styled.js";
 import "./assets/style/reset.css";
 import "./assets/style/style.css";
+
 function App() {
+	const [selectedText, setSelectedText] = useState(null);
 	const [touchStartX, setTouchStartX] = useState(null);
 	const [scrollLeft, setScrollLeft] = useState(0);
 
@@ -48,6 +51,11 @@ function App() {
 	const handleTouchEnd = () => {
 		setTouchStartX(null);
 	};
+
+	const handleText = (text) => {
+		setSelectedText(text);
+	};
+
 	return (
 		<div className='App'>
 			<Header>
@@ -64,11 +72,46 @@ function App() {
 					onTouchStart={handleTouchStart}
 					onTouchMove={handleTouchMove}
 					onTouchEnd={handleTouchEnd}>
-					<h3 onClick={handleText}>Nike</h3>
-					<h3 onClick={handleText}>Adidas</h3>
-					<h3 onClick={handleText}>Jordan</h3>
-					<h3 onClick={handleText}>Puma</h3>
-					<h3 onClick={handleText}>Gucci</h3>
+					<h3
+						onClick={() => handleText("Nike")}
+						style={{
+							color:
+								selectedText === "Nike" ? "#000" : "rgba(170, 170, 170, 1)",
+						}}>
+						Nike
+					</h3>
+					<h3
+						onClick={() => handleText("Adidas")}
+						style={{
+							color:
+								selectedText === "Adidas" ? "#000" : "rgba(170, 170, 170, 1)",
+						}}>
+						Adidas
+					</h3>
+					<h3
+						onClick={() => handleText("Jordan")}
+						style={{
+							color:
+								selectedText === "Jordan" ? "#000" : "rgba(170, 170, 170, 1)",
+						}}>
+						Jordan
+					</h3>
+					<h3
+						onClick={() => handleText("Puma")}
+						style={{
+							color:
+								selectedText === "Puma" ? "#000" : "rgba(170, 170, 170, 1)",
+						}}>
+						Puma
+					</h3>
+					<h3
+						onClick={() => handleText("Gucci")}
+						style={{
+							color:
+								selectedText === "Gucci" ? "#000" : "rgba(170, 170, 170, 1)",
+						}}>
+						Gucci
+					</h3>
 				</ContainerMain>
 			</Main>
 			<ContainerVertical>
