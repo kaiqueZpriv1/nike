@@ -9,6 +9,10 @@ body {
     background: #ebebeb;
 }
 
+.App {
+    margin-bottom: 20px;
+}
+
 ::-webkit-scrollbar,
 ::-webkit-scrollbar-track,
 ::-webkit-scrollbar-thumb {

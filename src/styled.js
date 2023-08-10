@@ -233,7 +233,7 @@ export const ContentFooter = styled.div`
 	justify-content: space-around;
 	align-items: center;
 	position: relative;
-	top: 10px;
+	/* top: 10px; */
 	button {
 		background: transparent;
 		border: none;

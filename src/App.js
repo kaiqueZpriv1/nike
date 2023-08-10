@@ -64,12 +64,11 @@ function App() {
 					onTouchStart={handleTouchStart}
 					onTouchMove={handleTouchMove}
 					onTouchEnd={handleTouchEnd}>
-					<h3>Nike</h3>
-					<h3>Adidas</h3>
-					<h3>Jordan</h3>
-					<h3>Puma</h3>
-					<h3>Gucci</h3>
-					<h3>Mizuno</h3>
+					<h3 onClick={handleText}>Nike</h3>
+					<h3 onClick={handleText}>Adidas</h3>
+					<h3 onClick={handleText}>Jordan</h3>
+					<h3 onClick={handleText}>Puma</h3>
+					<h3 onClick={handleText}>Gucci</h3>
 				</ContainerMain>
 			</Main>
 			<ContainerVertical>
