@@ -224,7 +224,7 @@ export const TextLine = styled.div`
 export const Footer = styled.div`
 	background: #fff;
 	position: fixed;
-	bottom: 20px;
+	bottom: 5px;
 	height: 50px;
 	width: 100%;
 `;
@@ -233,7 +233,7 @@ export const ContentFooter = styled.div`
 	justify-content: space-around;
 	align-items: center;
 	position: relative;
-	/* top: 10px; */
+	top: 10px;
 	button {
 		background: transparent;
 		border: none;
