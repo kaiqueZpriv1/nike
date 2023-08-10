@@ -61,7 +61,7 @@ const configTenis = [
 		id: 6,
 		image: tenis8,
 		marca: "NIKE",
-		name: "AIR-MAX",
+		name: "AIR-JORDAN MID",
 		value: "$130.00",
 		background: "#dcdcdc",
 	},

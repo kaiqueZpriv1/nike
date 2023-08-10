@@ -50,7 +50,7 @@ export const ContainerProdutos = styled.div``;
 
 export const ContainerVertical = styled.div`
 	display: flex;
-	margin: 20px 0;
+	margin: 10px 0;
 	display: flex;
 	align-items: center;
 `;
@@ -68,7 +68,7 @@ export const TextVertical = styled.div`
 		text-orientation: mixed;
 		line-height: 25px;
 		white-space: nowrap;
-		font-size: 7vw;
+		font-size: 6vw;
 		font-weight: 800;
 		font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
 			"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -89,8 +89,8 @@ export const ContainerPalet = styled.div`
 `;
 
 export const PaletBoot = styled.div`
-	width: 250px;
-	height: 350px;
+	width: 240px;
+	height: 340px;
 	border-radius: 30px;
 `;
 
@@ -102,7 +102,7 @@ export const HeaderBoot = styled.div`
 	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
 		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 	h3 {
-		font-size: 5%.5;
+		font-size: 5.5vw;
 		font-weight: 400;
 	}
 `;
@@ -132,14 +132,14 @@ export const ImageTenis = styled.div`
 	img {
 		transform: rotate(-35deg);
 		z-index: 9;
-		width: 300px;
+		width: 285px;
 	}
 `;
 export const FooterBoot = styled.div`
 	margin: 5px;
 	position: relative;
-	top: 50px;
-	left: 205px;
+	top: 40px;
+	left: 190px;
 `;
 export const PaletLine = styled.div`
 	margin: 20px 0 0 10px;
@@ -152,7 +152,7 @@ export const ContainerLine = styled.div`
 export const HeaderOutLine = styled.div`
 	display: flex;
 	justify-content: space-between;
-	margin: 20px 15px;
+	margin: 15px 15px;
 	h3 {
 		font-size: 6vw;
 		font-weight: 600;
@@ -167,7 +167,7 @@ export const ContainerLineOutput = styled.div`
 export const BoxLine = styled.div`
 	border-radius: 10px;
 	width: 210px;
-	height: 220px;
+	height: 230px;
 	background: #fafafa;
 	.containerLine {
 		display: flex;
@@ -206,7 +206,7 @@ export const VerticalLine = styled.div`
 
 export const ImageLine = styled.div`
 	position: relative;
-	bottom: 25px;
+	bottom: 30px;
 	left: 15px;
 	img {
 		width: 180px;
@@ -219,5 +219,23 @@ export const TextLine = styled.div`
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+`;
+
+export const Footer = styled.div`
+	background: #fff;
+	position: fixed;
+	bottom: 20px;
+	height: 50px;
+	width: 100%;
+`;
+export const ContentFooter = styled.div`
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 	position: relative;
+	top: 10px;
+	button {
+		background: transparent;
+		border: none;
+	}
 `;

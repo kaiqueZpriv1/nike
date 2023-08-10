@@ -4,6 +4,9 @@ import {
 	AiOutlineSearch,
 	AiFillBell,
 	AiOutlineArrowRight,
+	AiOutlineHome,
+	AiOutlineShoppingCart,
+	AiOutlineUser,
 } from "react-icons/ai";
 import TenisPallet from "./assets/components/TenisComponent.js";
 import ItensComponents from "./assets/components/Home_Components.js";
@@ -20,6 +23,8 @@ import {
 	HeaderOutLine,
 	PaletLine,
 	ContainerLine,
+	Footer,
+	ContentFooter,
 } from "./styled.js";
 import "./assets/style/reset.css";
 import "./assets/style/style.css";
@@ -92,6 +97,19 @@ function App() {
 					<ItensComponents />
 				</ContainerLine>
 			</PaletLine>
+			<Footer>
+				<ContentFooter>
+					<button className='btn-home'>
+						<AiOutlineHome size={30} />
+					</button>
+					<button className='btn-home'>
+						<AiOutlineShoppingCart size={30} />
+					</button>
+					<button className='btn-home'>
+						<AiOutlineUser size={30} />
+					</button>
+				</ContentFooter>
+			</Footer>
 		</div>
 	);
 }
