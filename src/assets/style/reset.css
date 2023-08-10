@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body {
+
+    background: #ebebeb;
+}
+
 ::-webkit-scrollbar,
 ::-webkit-scrollbar-track,
 ::-webkit-scrollbar-thumb {

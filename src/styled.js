@@ -3,11 +3,11 @@
 import styled from "styled-components";
 
 export const Header = styled.header`
-	background: rgba(255, 255, 255, 1);
+	background: #ebebeb;
 `;
 
 export const HeaderView = styled.div`
-	margin: 10px;
+	margin: 10px 0 0 25px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -25,7 +25,7 @@ export const ContainerSearch = styled.div`
 `;
 
 export const Main = styled.main`
-	margin-top: 30px;
+	margin-top: 20px;
 `;
 
 export const ContainerMain = styled.div`
@@ -33,12 +33,12 @@ export const ContainerMain = styled.div`
 	align-items: center;
 	white-space: nowrap;
 	overflow-x: auto;
-	margin: 25px 20px;
-	gap: 20px;
+	margin: 0 0 0 25px;
+	gap: 15px;
 	h3 {
 		border: none;
 		background: transparent;
-		font-size: 7vw;
+		font-size: 6vw;
 		font-weight: 800;
 		font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
 			"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -46,10 +46,11 @@ export const ContainerMain = styled.div`
 		cursor: pointer;
 	}
 `;
+export const ContainerProdutos = styled.div``;
 
 export const ContainerVertical = styled.div`
 	display: flex;
-	margin: 30px 0;
+	margin: 20px 0;
 	display: flex;
 	align-items: center;
 `;
@@ -139,4 +140,84 @@ export const FooterBoot = styled.div`
 	position: relative;
 	top: 50px;
 	left: 205px;
+`;
+export const PaletLine = styled.div`
+	margin: 20px 0 0 10px;
+`;
+export const ContainerLine = styled.div`
+	display: flex;
+	align-items: center;
+	overflow-x: auto;
+`;
+export const HeaderOutLine = styled.div`
+	display: flex;
+	justify-content: space-between;
+	margin: 20px 15px;
+	h3 {
+		font-size: 6vw;
+		font-weight: 600;
+		font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+			"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	}
+`;
+export const ContainerLineOutput = styled.div`
+	display: flex;
+	gap: 20px;
+`;
+export const BoxLine = styled.div`
+	border-radius: 10px;
+	width: 210px;
+	height: 220px;
+	background: #fafafa;
+	.containerLine {
+		display: flex;
+		flex-direction: column;
+		.headerLine {
+			display: flex;
+			.iconCoracao {
+				position: relative;
+				left: 140px;
+				top: 10px;
+			}
+		}
+	}
+`;
+export const VerticalLine = styled.div`
+	background: rgba(255, 0, 0, 1);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	transform: rotate(-180deg);
+	width: 30px;
+	height: 80px;
+	h3 {
+		writing-mode: vertical-lr;
+		word-spacing: 5px;
+		text-orientation: mixed;
+		white-space: nowrap;
+		font-size: 5vw;
+		font-weight: 500;
+		font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+			"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+		color: #fff;
+	}
+`;
+
+export const ImageLine = styled.div`
+	position: relative;
+	bottom: 25px;
+	left: 15px;
+	img {
+		width: 180px;
+		transform: rotate(-10deg);
+	}
+`;
+
+export const TextLine = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
 `;

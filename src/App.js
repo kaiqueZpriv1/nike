@@ -1,7 +1,12 @@
 /** @format */
 import React, { useState } from "react";
-import { AiOutlineSearch, AiFillBell } from "react-icons/ai";
+import {
+	AiOutlineSearch,
+	AiFillBell,
+	AiOutlineArrowRight,
+} from "react-icons/ai";
 import TenisPallet from "./assets/components/TenisComponent.js";
+import ItensComponents from "./assets/components/Home_Components.js";
 import {
 	Header,
 	HeaderView,
@@ -12,6 +17,9 @@ import {
 	ContainerVertical,
 	TextVertical,
 	ContainerPaletOuter,
+	HeaderOutLine,
+	PaletLine,
+	ContainerLine,
 } from "./styled.js";
 import "./assets/style/reset.css";
 import "./assets/style/style.css";
@@ -72,6 +80,18 @@ function App() {
 					<TenisPallet />
 				</ContainerPaletOuter>
 			</ContainerVertical>
+			<PaletLine>
+				<HeaderOutLine>
+					<h3>More</h3>
+					<AiOutlineArrowRight size={30} />
+				</HeaderOutLine>
+				<ContainerLine
+					onTouchStart={handleTouchStart}
+					onTouchMove={handleTouchMove}
+					onTouchEnd={handleTouchEnd}>
+					<ItensComponents />
+				</ContainerLine>
+			</PaletLine>
 		</div>
 	);
 }
