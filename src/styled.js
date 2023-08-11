@@ -169,6 +169,7 @@ export const BoxLine = styled.div`
 	width: 210px;
 	height: 230px;
 	background: #fafafa;
+	margin-bottom: 30px;
 	.containerLine {
 		display: flex;
 		flex-direction: column;
